@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{249F69FE-19A4-48D3-80C8-537BF1BCD1FC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Desktop_Front</RootNamespace>
+    <AssemblyName>Desktop-Front</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Views\Tela_Admin_Org.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Tela_Admin_Org.Designer.cs">
+      <DependentUpon>Tela_Admin_Org.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tela_Boas_Vindas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Tela_Boas_Vindas.Designer.cs">
+      <DependentUpon>Tela_Boas_Vindas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\Tela_Criar_Campanha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Tela_Criar_Campanha.Designer.cs">
+      <DependentUpon>Tela_Criar_Campanha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tela_Enviar_Codigo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Tela_Enviar_Codigo.Designer.cs">
+      <DependentUpon>Tela_Enviar_Codigo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tela_Erro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Tela_Erro.Designer.cs">
+      <DependentUpon>Tela_Erro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tela_Historico_Campanha_Atual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Tela_Historico_Campanha_Atual.Designer.cs">
+      <DependentUpon>Tela_Historico_Campanha_Atual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tela_Historico_Campanha_Geral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Tela_Historico_Campanha_Geral.Designer.cs">
+      <DependentUpon>Tela_Historico_Campanha_Geral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tela_Historico_Campanha_Mes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Tela_Historico_Campanha_Mes.Designer.cs">
+      <DependentUpon>Tela_Historico_Campanha_Mes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tela_Historico_Campanha_Opcao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Tela_Historico_Campanha_Opcao.Designer.cs">
+      <DependentUpon>Tela_Historico_Campanha_Opcao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tela_Historico_Lista_Campanhas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Tela_Historico_Lista_Campanhas.Designer.cs">
+      <DependentUpon>Tela_Historico_Lista_Campanhas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tela_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Tela_Login.Designer.cs">
+      <DependentUpon>Tela_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tela_Mudar_Senha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Tela_Mudar_Senha.Designer.cs">
+      <DependentUpon>Tela_Mudar_Senha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tela_Perfil_Org.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Tela_Perfil_Org.Designer.cs">
+      <DependentUpon>Tela_Perfil_Org.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tela_Historico_Campanha_Opcao_Mes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Tela_Historico_Campanha_Opcao_Mes.Designer.cs">
+      <DependentUpon>Tela_Historico_Campanha_Opcao_Mes.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Views\Tela_Admin_Org.resx">
+      <DependentUpon>Tela_Admin_Org.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Tela_Boas_Vindas.resx">
+      <DependentUpon>Tela_Boas_Vindas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Views\Tela_Criar_Campanha.resx">
+      <DependentUpon>Tela_Criar_Campanha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Tela_Enviar_Codigo.resx">
+      <DependentUpon>Tela_Enviar_Codigo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Tela_Erro.resx">
+      <DependentUpon>Tela_Erro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Tela_Historico_Campanha_Atual.resx">
+      <DependentUpon>Tela_Historico_Campanha_Atual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Tela_Historico_Campanha_Geral.resx">
+      <DependentUpon>Tela_Historico_Campanha_Geral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Tela_Historico_Campanha_Mes.resx">
+      <DependentUpon>Tela_Historico_Campanha_Mes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Tela_Historico_Campanha_Opcao.resx">
+      <DependentUpon>Tela_Historico_Campanha_Opcao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Tela_Historico_Lista_Campanhas.resx">
+      <DependentUpon>Tela_Historico_Lista_Campanhas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Tela_Login.resx">
+      <DependentUpon>Tela_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Tela_Mudar_Senha.resx">
+      <DependentUpon>Tela_Mudar_Senha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Tela_Perfil_Org.resx">
+      <DependentUpon>Tela_Perfil_Org.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Tela_Historico_Campanha_Opcao_Mes.resx">
+      <DependentUpon>Tela_Historico_Campanha_Opcao_Mes.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\computer-1331579_640.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img-doaFacil.org.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Oops-404.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upload.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
